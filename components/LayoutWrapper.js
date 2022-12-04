@@ -19,7 +19,7 @@ const LayoutWrapper = ({ children }) => {
               <div className="flex items-center justify-between">
                 <div className="mr-3">
                   <Image
-                    className="object-cover object-center"
+                    className="object-cover object-center md:h-36 lg:h-48"
                     alt="logo"
                     src="/static/images/logo.png"
                     width={60}
