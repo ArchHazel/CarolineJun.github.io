@@ -18,8 +18,8 @@ export default function Footer() {
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
-          <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
+          {/* <div>{` • `}</div>
+          <Link href="/">{siteMetadata.title}</Link> */}
         </div>
         <div className="mono-type mb-8 text-sm text-gray-500 dark:text-gray-400">
           <Link href="_target">Powered by enthusiasm.</Link>

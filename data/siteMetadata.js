@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Jun Space',
+  title: '',
   author: 'Hazel',
-  headerTitle: 'JunSpace',
-  description: 'A home page of Jun',
+  headerTitle: '',
+  description: 'A home page of Huijun Han',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.celest.cc',

@@ -9,4 +9,7 @@ email: hanhj.loquat@gmail.com
 github: https://github.com/CarolineJun
 ---
 
-Hi! My name is Huijun Han.
+I am a Research Assistant at the Faculty of Dentistry in the University of Hong Kong.
+Before joining HKU, I received my B. Eng. degree from the School of Instrument Science and Engineering, Southeast University.
+
+I believe enthusiasm and responsibility are the cure for fear and inertia.
