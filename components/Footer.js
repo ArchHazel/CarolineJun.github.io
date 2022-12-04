@@ -1,7 +1,7 @@
 import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
-
+import { RoughNotation } from 'react-rough-notation'
 export default function Footer() {
   return (
     <footer>
@@ -22,7 +22,17 @@ export default function Footer() {
           <Link href="/">{siteMetadata.title}</Link> */}
         </div>
         <div className="mono-type mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="_target">Powered by enthusiasm.</Link>
+          <Link href="/">
+            <RoughNotation
+              type="underline"
+              show={true}
+              color="#13b57b"
+              animationDelay={3000}
+              animationDuration={2000}
+            >
+              Powered by enthusiasm.
+            </RoughNotation>
+          </Link>
         </div>
       </div>
     </footer>
