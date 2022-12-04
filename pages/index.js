@@ -15,7 +15,7 @@ export default function Home({ authorDetails }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="mono-type divide-y divide-gray-200 dark:divide-gray-700">
         <MDXLayoutRenderer
           layout={frontMatter.layout || DEFAULT_LAYOUT}
           mdxSource={mdxSource}
