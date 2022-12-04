@@ -13,7 +13,7 @@ const publicationsData = [
     ],
     date: '2021-02',
     imgSrc: '/static/images/google.png',
-    href: 'https://ieeexplore.ieee.org/document/9170544',
+    links: [{ name: 'IEEE TCAS-II', link: 'https://ieeexplore.ieee.org/document/9170544' }],
   },
   // {
   //   title: 'A Search Engine',
