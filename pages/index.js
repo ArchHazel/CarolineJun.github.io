@@ -7,6 +7,7 @@ import AuthorLayout from '@/layouts/AuthorLayout'
 import Link from '@/components/Link'
 import { RoughNotation } from 'react-rough-notation'
 import publicationsData from '@/data/publicationsData'
+import projectsData from '@/data/projectsData'
 import formatDate from '@/lib/utils/formatDate'
 import Tag from '@/components/Tag'
 const DEFAULT_LAYOUT = 'AuthorLayout'
@@ -14,10 +15,11 @@ const DEFAULT_LAYOUT = 'AuthorLayout'
 export async function getStaticProps() {
   const authorDetails = await getFileBySlug('authors', ['default'])
   const pubs = publicationsData.filter((x) => x.show == true)
-  return { props: { authorDetails, pubs } }
+  const projs = projectsData
+  return { props: { authorDetails, pubs, projs } }
 }
 
-export default function Home({ authorDetails, pubs }) {
+export default function Home({ authorDetails, pubs, projs }) {
   const { mdxSource, frontMatter } = authorDetails
   const source = (
     <div>
@@ -76,6 +78,27 @@ export default function Home({ authorDetails, pubs }) {
         Research interests: <span className="font-medium">Computer Graphics (CG)</span> and{' '}
         <span className="font-medium">Human Computer Interaction (HCI)</span>.
       </p>
+      <div>
+        <p className="mb-2 mt-10 text-2xl font-bold">Project Spotlights</p>
+        {projs.map((proj, idx) => {
+          const { title, description } = proj
+          return (
+            <div
+              key={idx}
+              className="space-y-2 xl:grid xl:grid-cols-3 xl:items-baseline xl:space-y-0"
+            >
+              <div className="xl:col-span-3">
+                <h3 className="my-0 text-xl font-medium leading-8 tracking-tight text-gray-900 dark:text-gray-100">
+                  {title}
+                </h3>
+                <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                  {description}
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </div>
       <div>
         <p className="mb-2 mt-10 text-2xl font-bold">Selected publications</p>
         {pubs.map((pub, idx) => {
