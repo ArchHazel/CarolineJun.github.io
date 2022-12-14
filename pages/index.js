@@ -41,7 +41,7 @@ export default function Home({ authorDetails, pubs }) {
         supervised by postdoctoral fellow{' '}
         <Link
           target="_blank"
-          className="whitespace-nowrap text-inherit text-emerald-700 no-underline"
+          className="text-inherit text-emerald-700 no-underline"
           href="https://cong-yi.github.io/"
         >
           Congyi Zhang
@@ -49,7 +49,7 @@ export default function Home({ authorDetails, pubs }) {
         and Prof.{' '}
         <Link
           target="_blank"
-          className="whitespace-nowrap text-inherit text-emerald-700 no-underline"
+          className="text-inherit text-emerald-700 no-underline"
           href="https://ins.seu.edu.cn/yk_english/2020/0219/c27542a317780/page.htm"
         >
           Lifeng Zhu
