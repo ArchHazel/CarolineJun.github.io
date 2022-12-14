@@ -23,17 +23,25 @@ export default function Home({ authorDetails, pubs }) {
     <div>
       <p>
         I am a Research Assistant at the{' '}
-        <Link className=" text-inherit no-underline" href="https://facdent.hku.hk" target="_blank">
+        <Link
+          className=" text-inherit text-emerald-700 no-underline"
+          href="https://facdent.hku.hk"
+          target="_blank"
+        >
           Faculty of Dentistry
         </Link>{' '}
         in the{' '}
-        <Link className=" text-inherit no-underline" href="https://www.hku.hk" target="_blank">
+        <Link
+          className=" text-inherit text-emerald-700 no-underline"
+          href="https://www.hku.hk"
+          target="_blank"
+        >
           University of Hong Kong
         </Link>{' '}
         supervised by postdoctoral fellow{' '}
         <Link
           target="_blank"
-          className="whitespace-nowrap text-inherit no-underline"
+          className="whitespace-nowrap text-inherit text-emerald-700 no-underline"
           href="https://cong-yi.github.io/"
         >
           Congyi Zhang
@@ -41,14 +49,14 @@ export default function Home({ authorDetails, pubs }) {
         and Prof.{' '}
         <Link
           target="_blank"
-          className="whitespace-nowrap text-inherit no-underline"
+          className="whitespace-nowrap text-inherit text-emerald-700 no-underline"
           href="https://ins.seu.edu.cn/yk_english/2020/0219/c27542a317780/page.htm"
         >
           Lifeng Zhu
         </Link>
         . Before joining HKU, I received my B. Eng. degree from the{' '}
         <Link
-          className=" text-inherit no-underline"
+          className=" text-inherit text-emerald-700 no-underline"
           href="https://ins.seu.edu.cn/yk_english/main.htm"
           target="_blank"
         >
@@ -56,7 +64,7 @@ export default function Home({ authorDetails, pubs }) {
         </Link>
         ,{' '}
         <Link
-          className="text-inherit no-underline"
+          className="text-inherit text-emerald-700 no-underline"
           href="https://www.seu.edu.cn/english/main.htm"
           target="_blank"
         >
